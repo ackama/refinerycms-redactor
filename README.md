@@ -19,12 +19,19 @@ Just add this gem to your application's `Gemfile`, replacing the `refinerycms-wy
 + gem 'refinerycms-redactor'
 ```
 
-...and run `bundle install`. There are no other requirements, as this extension does not contain any special migrations or seeds.
+You can then follow the usual process for adding a Refinery extension, that is:
+
+* Run `bundle install`
+* Run the extension generator:  `rails generate refinery:redactor`
+
 
 ### Configuring
 
-The configuration for the editor is currently fixed, however support for custom configuration (in JS) is planned very soon.
-The current configuration is default as per the Redactor documentation, with the exception of the following plugins which are _enabled_:
+When you run the extension generator, a config file is placed in your application's assets directory (app/assets/javascripts/refinery-redactor/config.js). This file contains tonnes of Redactor settings that you can use to customize the Redactor editor to your needs - for example, you can control which buttons are shown, add or remove plugins, and much more. 
+
+The config that is generated for you is exactly the same as the Redactor system defaults. If you wish to slim down this file, you can remove config settings that you have customized and everything will work exactly the same.
+
+This gem comes bundled with a number of useful plugins which you can enable in your config if you wish:
 
 - `fontsize` (adjust font size)
 - `fontcolor` (adjust font colour)
@@ -32,7 +39,8 @@ The current configuration is default as per the Redactor documentation, with the
 - `fullscreen` (edit in fullscreen view)
 - `clips` (insert pre-written bits of content)
 
-If you need to adjust the config right away, that's fine - just copy the `config.js` file out of this repository (vendor/assets/javascripts/refinery-redactor/config.js) and place it in your project's javascripts assets folder in a subfolder named "refinery-redactor". Rails should automatically prefer this file when loading.
+If you don't want to customize the editor, you can remove the `refinery-redactor` directory and the default system will be used.
+
 
 ### Contributing
 
