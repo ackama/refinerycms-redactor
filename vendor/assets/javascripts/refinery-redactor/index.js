@@ -1,2 +1,4 @@
 //= require ./redactor
-//= require ./config
+//= require ./config-setup
+//= require refinery-redactor/config
+//= require ./boot
