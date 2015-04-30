@@ -11,5 +11,12 @@ window.init_redactor = function(){
       "css":"style.css"}
   );
 }
+        "plugins": [
+          'fontsize',
+          'fontcolor',
+          'fontfamily',
+          'fullscreen',
+          'clips'
+        ],
 
 $(document).on( 'ready page:load', window.init_redactor );
