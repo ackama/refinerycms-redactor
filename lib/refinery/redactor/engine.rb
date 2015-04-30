@@ -21,7 +21,8 @@ module Refinery
           plugin.pathname = root
           plugin.name = "refinerycms_redactor"
           plugin.hide_from_menu = true
-          plugin.menu_match = %r{refinery/redactor}
+          plugin.menu_match = %r{refinery/redactor/(images|resources)}
+          plugin.always_allow_access = true
         end
       end
 
