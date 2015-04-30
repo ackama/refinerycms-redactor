@@ -27,6 +27,10 @@ You may override the config settings in config.js.
 
 > TODO: Instructions coming soon
 
+### Contributing
+
+Contributing is very easy - simply clone the project, and run the tests with the `rake spec` command. If you wish, you can run `rake -T` to see a list of rake tasks that RefineryCMS provides for (re)generating a dummy app for the tests to run against. Once your change has been made and the tests are green, submit a pull request!
+
 ### License
 
 This gem is published under an MIT license. See MIT-LICENSE for details
