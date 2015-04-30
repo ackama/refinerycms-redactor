@@ -16,4 +16,8 @@ git "http://github.com/refinery/refinerycms", branch: "master" do
   gem "refinerycms-testing"
 end
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'selenium-webdriver', '~> 2.43'
+  gem 'sqlite3'
+end
+

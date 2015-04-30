@@ -4,6 +4,8 @@ pkg/
 spec/dummy/db/*.sqlite3
 spec/dummy/db/*.sqlite3-journal
 spec/dummy/log/*.log
+spec/dummy/dummy_test
+spec/dummy/dummy_dev
 spec/dummy/tmp/
 spec/dummy/.sass-cache
 dragonfly.log
