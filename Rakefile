@@ -26,6 +26,11 @@ Refinery::Testing::Railtie.load_dummy_tasks(ENGINE_PATH)
 
 
 
+begin
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec)
+rescue LoadError
+end
 
 
 Bundler::GemHelper.install_tasks
