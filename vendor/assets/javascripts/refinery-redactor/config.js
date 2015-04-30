@@ -6,11 +6,11 @@ window.init_redactor = function(){
     params = csrf_param + "=" + encodeURIComponent(csrf_token);
   }
   $('.visual_editor').redactor(
-    { "imageUpload":"/redactor_images?" + params,
-      "path":"/assets/redactor-rails",
-      "css":"style.css"}
-  );
-}
+      { "imageUpload":"/redactor_images?" + params,
+        "fileUpload":"/redactor_resources?" + params,
+        "path":"/assets/redactor-rails",
+        "buttonSource": true,
+        "imageResizable": true,
         "plugins": [
           'fontsize',
           'fontcolor',
