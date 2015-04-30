@@ -2,9 +2,12 @@
 
 This gem replaces Refinery's default WYMeditor with Redactor, a super clean and simple HTML5-based text editor. It's compatible with RefineryCMS 3.0 and above (previous to this, WYMeditor was much more tightly bound to the core project and difficult to replace).
 
+![Screenshot of Refinery Redactor in action!](https://raw.githubusercontent.com/rabid/refinerycms-redactor/master/screenshot.png)
+
 ### Important note!
 
 Before installing this gem, please check that the use will be in compliance with [Redactor's License](http://imperavi.com/redactor/license/). In short, use of Redactor for anything other than non-commerical personal works requires the payment of a license fee to the authors of Redactor, [Imperavi LLC](http://imperavi.com/). This gem includes a recent version of Redactor and is updated peridically (if you wish to help with this, pull requests are welcome).
+
 
 ### Requirements
 
