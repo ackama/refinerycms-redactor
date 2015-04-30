@@ -14,6 +14,15 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
+ENGINE_PATH = File.dirname(__FILE__)
+APP_RAKEFILE = File.expand_path("../spec/dummy/Rakefile", __FILE__)
+
+if File.exists?(APP_RAKEFILE)
+    load 'rails/tasks/engine.rake'
+end
+
+require "refinerycms-testing"
+Refinery::Testing::Railtie.load_dummy_tasks(ENGINE_PATH)
 
 
 
@@ -21,14 +30,5 @@ end
 
 Bundler::GemHelper.install_tasks
 
-require 'rake/testtask'
 
-Rake::TestTask.new(:test) do |t|
-  t.libs << 'lib'
-  t.libs << 'test'
-  t.pattern = 'test/**/*_test.rb'
-  t.verbose = false
-end
-
-
-task default: :test
+task default: :spec
