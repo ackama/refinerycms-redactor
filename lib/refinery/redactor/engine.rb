@@ -10,6 +10,7 @@ module Refinery
       config.to_prepare do
         Rails.application.config.assets.precompile += %w(
           refinery-redactor/index.css
+          refinery-redactor/plugins.css
           refinery-redactor/plugins.js
           refinery-redactor/index.js
         )
@@ -29,11 +30,11 @@ module Refinery
       end
 
       after_inclusion do
-        %w(refinery-redactor/index).each do |stylesheet|
+        %w(refinery-redactor/plugins refinery-redactor/index).each do |stylesheet|
           Refinery::Core.config.register_visual_editor_stylesheet stylesheet
         end
 
-        %W(refinery-redactor/index refinery-redactor/plugins).each do |javascript|
+        %W(refinery-redactor/plugins refinery-redactor/index).each do |javascript|
           Refinery::Core.config.register_visual_editor_javascript javascript
         end
       end
