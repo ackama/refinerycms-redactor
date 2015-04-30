@@ -23,9 +23,16 @@ Just add this gem to your application's `Gemfile`, replacing the `refinerycms-wy
 
 ### Configuring
 
-You may override the config settings in config.js.
+The configuration for the editor is currently fixed, however support for custom configuration (in JS) is planned very soon.
+The current configuration is default as per the Redactor documentation, with the exception of the following plugins which are _enabled_:
 
-> TODO: Instructions coming soon
+- `fontsize` (adjust font size)
+- `fontcolor` (adjust font colour)
+- `fontfamily` (adjust font family)
+- `fullscreen` (edit in fullscreen view)
+- `clips` (insert pre-written bits of content)
+
+If you need to adjust the config right away, that's fine - just copy the `config.js` file out of this repository (vendor/assets/javascripts/refinery-redactor/config.js) and place it in your project's javascripts assets folder in a subfolder named "refinery-redactor". Rails should automatically prefer this file when loading.
 
 ### Contributing
 
