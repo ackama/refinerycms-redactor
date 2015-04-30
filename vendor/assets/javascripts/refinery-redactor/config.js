@@ -18,5 +18,8 @@ window.init_redactor = function(){
           'fullscreen',
           'clips'
         ],
+        "css":"style.css"}
+      );
+  }
 
 $(document).on( 'ready page:load', window.init_redactor );
