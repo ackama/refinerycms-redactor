@@ -1,8 +1,8 @@
 language: ruby
 cache: bundler
 before_script:
-  - "./bin/rake refinery:testing:dummy_app"
-  - "cd spec/dummy && bin/rails g refinery:redactor"
+  - "rake refinery:testing:dummy_app"
+  - "cd spec/dummy && ./bin/rails g refinery:redactor"
 script:
   - "./bin/rake spec"
 rvm:
