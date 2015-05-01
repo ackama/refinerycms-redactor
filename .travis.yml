@@ -3,7 +3,7 @@ cache: bundler
 before_script:
   - "cd spec/dummy && bundle exec rake db:test:prepare"
 script:
-  - "rspec spec/"
+  - "bundle exec rspec spec/"
 rvm:
   - 2.2
   - 2.1
