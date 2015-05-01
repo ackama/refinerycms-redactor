@@ -14,7 +14,7 @@ $(document).on('ready page:load', function() {
   };
 
 
-  if ($.redactor) {
+  if ($.fn.redactor) {
     $('.visual_editor').redactor(
       $.extend({}, RefineryRedactor.CONFIG, defaultOptions)
     );
