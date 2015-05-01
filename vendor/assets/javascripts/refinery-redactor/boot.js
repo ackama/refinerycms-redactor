@@ -14,8 +14,10 @@ $(document).on('ready page:load', function() {
   };
 
 
-  $('.visual_editor').redactor(
-    $.extend({}, RefineryRedactor.CONFIG, defaultOptions)
-  );
+  if ($.redactor) {
+    $('.visual_editor').redactor(
+      $.extend({}, RefineryRedactor.CONFIG, defaultOptions)
+    );
+  }
 });
 
