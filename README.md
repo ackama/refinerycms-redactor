@@ -20,6 +20,8 @@ Once these files are in place this extension will automatically pick them up and
 
 An application set up with RefineryCMS 3 or higher. For help getting that set up, check out Refinery's [Getting Started guide](refinerycms.com/guides/getting-started/).
 
+> Note that RefineryCMS is not yet released as a gem - installation is required from Github.
+
 ### Installation
 
 Just add this gem to your application's `Gemfile`, replacing the `refinerycms-wymeditor` gem that was inserted by the setup process for RefineryCMS itself:
@@ -37,7 +39,7 @@ You can then follow the usual process for adding a Refinery extension, that is:
 
 ### Configuring
 
-When you run the extension generator, a config file is placed in your application's assets directory (app/assets/javascripts/refinery-redactor/config.js). This file contains tonnes of Redactor settings that you can use to customize the Redactor editor to your needs - for example, you can control which buttons are shown, add or remove plugins, and much more. 
+When you run the extension generator, a config file is placed in your application's assets directory (app/assets/javascripts/refinery-redactor/config.js). This file contains tonnes of Redactor settings that you can use to customize the Redactor editor to your needs - for example, you can control which buttons are shown, add or remove plugins, and much more.
 
 The config that is generated for you is exactly the same as the Redactor system defaults. If you wish to slim down this file, you can remove config settings that you have customized and everything will work exactly the same.
 
