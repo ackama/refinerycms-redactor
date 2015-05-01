@@ -1,0 +1,12 @@
+language: ruby
+cache: bundler
+before_script:
+  - "bin/rake refinery:testing:dummy_app"
+  - "cd spec/dummy && bin/rails g refinery:redactor"
+script:
+  - "./bin/rake spec"
+rvm:
+  - 2.2
+  - 2.1
+  - 2.0.0
+sudo: false
