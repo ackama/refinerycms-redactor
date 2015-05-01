@@ -4,9 +4,16 @@ This gem replaces Refinery's default WYMeditor with Redactor, a super clean and 
 
 ![Screenshot of Refinery Redactor in action!](https://raw.githubusercontent.com/rabid/refinerycms-redactor/master/screenshot.png)
 
-### Important note!
+### Installing Redactor
 
-Before installing this gem, please check that the use will be in compliance with [Redactor's License](http://imperavi.com/redactor/license/). In short, use of Redactor for anything other than non-commerical personal works requires the payment of a license fee to the authors of Redactor, [Imperavi LLC](http://imperavi.com/). This gem includes a recent version of Redactor and is updated peridically (if you wish to help with this, pull requests are welcome).
+**This gem does not include Redactor for you**. This is beause it is against the terms of [Redactor's license agreement](http://imperavi.com/redactor/license/) to distribute the source code of Redactor in an open source project without purchasing a $499 OEM license. Instead, we provide as much support as possible to set up Redactor.
+
+We generate two files - a stylesheet and a javascript, in your javascript and stylesheet asset directories (`app/assets/stylesheets` and `app/assets/javascripts`). These files just warn you that Redactor isn't installed. If you see these warnings, you will need to go to the [Redactor website](http://imperavi.com/redactor/download/) and buy a license (obviously, this step is not necessary if you already hold a license). You will then be able to download the source of Redactor that includes two key files - `redactor.js` and `redactor.css`. All you need to do to install Redactor is to copy-and-paste these files so that they overwrite their respective placeholders that were generated when installing this extension - e.g. the files should be placed in:
+
+* `app/assets/javascripts/refinery-redactor/redactor.js`
+* `app/assets/stylesheets/refinery-redactor/redactor.css`
+
+Once these files are in place this extension will automatically pick them up and use them. Additionally, Redactor will be set up to support file and image uploading to Refinery.
 
 
 ### Requirements
