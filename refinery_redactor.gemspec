@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Refinery::Redactor::VERSION
   s.authors     = ["Josh McArthur"]
   s.email       = ["joshua.mcarthur@gmail.com"]
-  s.homepage    = "https://github.com/rabidtech/refinery-redactor"
+  s.homepage    = "https://github.com/rabid/refinerycms-redactor"
   s.summary     = "Adds support for using the Redactor editor in a Refinery site"
   s.description = "Adds support for using the Redactor editor in a Refinery site. Bring your own license!"
   s.license     = "MIT"
