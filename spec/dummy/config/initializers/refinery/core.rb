@@ -39,7 +39,7 @@ Refinery::Core.configure do |config|
 
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
-  # config.dragonfly_secret = "68a6ad1b3097cbb24a0d13f66fce44463f245d3c9a9b9fe3"
+  # config.dragonfly_secret = "d092da1024165f5f7b85024f676c8e8ff8e56e57b9b9b5dd"
 
   # Register extra javascript for backend
   # config.register_javascript "prototype-rails"

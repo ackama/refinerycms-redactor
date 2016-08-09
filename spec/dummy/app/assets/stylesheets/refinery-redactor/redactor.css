@@ -1,9 +1,0 @@
-#admin_container #page:before {
-  content: "Redactor stylesheet is missing - see https://github.com/rabid/refinerycms-redactor#installing-redactor";
-  padding: 10px;
-  margin-bottom: 10px;
-  display: block;
-  border: 1px solid #A00027;
-  color: #A00027;
-  background: #FFB1B1;
-}
