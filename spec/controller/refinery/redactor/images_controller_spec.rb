@@ -21,7 +21,9 @@ module Refinery
 
           it "responds with correct JSON" do
             subject
-            expect(JSON.parse(response.body)).to have_key "filelink"
+            expect(JSON.parse(response.body)).to have_key 'filelink'
+            expect(JSON.parse(response.body)).to have_key 'url'
+            expect(JSON.parse(response.body)).to have_key 'id'
           end
         end
 
