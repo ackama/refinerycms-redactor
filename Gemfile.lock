@@ -51,7 +51,7 @@ GIT
 PATH
   remote: .
   specs:
-    refinerycms-redactor (0.0.1)
+    refinerycms-redactor (0.0.2)
       refinerycms-core (~> 3.0, >= 3.0.0)
 
 GEM
@@ -253,3 +253,6 @@ DEPENDENCIES
   refinerycms-testing!
   selenium-webdriver (~> 2.43)
   sqlite3
+
+BUNDLED WITH
+   1.10.5
